@@ -51,7 +51,7 @@ Merry Christmas
                 <div className="h-[1px] w-8 md:w-12 bg-current"></div>
               </div>
             </div>
-            <Envelope isOpen={isOpen} onOpen={handleOpenEnvelope} isLoading={false} />
+            <Envelope isOpen={isOpen} onOpen={handleOpenEnvelope} />
           </div>
         )}
 

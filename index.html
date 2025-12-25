@@ -82,6 +82,21 @@
         50% { transform: translateY(-10px) rotate(2deg); }
       }
       .animate-float { animation: float 3s ease-in-out infinite; }
+      
+      /* Bubble styles */
+      .bubble {
+        position: absolute;
+        bottom: -20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: bubbleUp linear infinite;
+      }
+      @keyframes bubbleUp {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 0.5; }
+        80% { opacity: 0.5; }
+        100% { transform: translateY(-100vh); opacity: 0; }
+      }
     </style>
   <script type="importmap">
 {

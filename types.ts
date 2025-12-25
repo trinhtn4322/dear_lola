@@ -1,8 +1,9 @@
 
+// Fix: Added the WishRequest interface to provide the expected type for geminiService.ts
 export interface WishRequest {
   recipientName: string;
   personality: string;
-  theme: 'funny' | 'sweet' | 'poetic';
+  theme: string;
 }
 
 export interface FishMessage {

@@ -4,10 +4,9 @@ import React, { useState } from 'react';
 interface EnvelopeProps {
   isOpen: boolean;
   onOpen: () => void;
-  isLoading: boolean;
 }
 
-const Envelope: React.FC<EnvelopeProps> = ({ isOpen, onOpen, isLoading }) => {
+const Envelope: React.FC<EnvelopeProps> = ({ isOpen, onOpen }) => {
   const [isShaking, setIsShaking] = useState(false);
   const [isBroken, setIsBroken] = useState(false);
 
